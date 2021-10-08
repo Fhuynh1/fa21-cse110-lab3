@@ -1,2 +1,1 @@
-[https://fhuynh1.github.io/Lab2/](https://fhuynh1.github.io/Lab2/)
-Checking if lab3 works
+[https://fhuynh1.github.io/fa21-cse110-lab3/](https://fhuynh1.github.io/fa21-cse110-lab3/)
