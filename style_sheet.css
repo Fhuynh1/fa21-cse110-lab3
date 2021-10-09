@@ -1,0 +1,153 @@
+header, footer{
+    /*changing the text inside of header and footer*/
+    color: #F9F5E3;
+    text-decoration: palevioletred;
+    position: sticky;
+    text-decoration: underline #F9F5E3;
+}
+
+/*changing the background color of the form, body and main*/
+main, body{
+    background: hsl(36, 89%, 89%);
+    color: palevioletred;
+}
+form{
+    background:wheat;
+    /*chaning the size of the form*/
+    height: 135ex;
+    width:auto;
+    max-width: 150ex;
+    min-width:auto;  
+    position: relative;
+}
+
+/*changing the text for the whole page*/
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/*changing the colors for links*/
+a:link{
+    color:mediumorchid;
+}
+a:visited{
+    color:mediumvioletred
+}
+a:active{
+    color:rgb(255, 255, 146)
+}
+
+/*borders for the form section*/
+.box {
+    border-style: dotted;
+    border-color: orange;
+    border-width: 4px;
+    border-radius: 3%;
+    background-color: peachpuff;
+    margin-top: 4mm;
+    margin-bottom: 4mm;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1ch;
+    padding-bottom: 2ch;
+
+    display: block;
+
+}
+
+/*borders for the header section*/
+.boxHeader{
+    border: solid 4px #F9F5E3;
+    border-radius: 3%;
+    background-color:rgb(250, 169, 137);
+    margin:auto;
+    padding: 10px;
+}
+
+/*format for the header*/
+.gridbox{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "main main . sidebar";
+}
+
+.item1{
+    grid-area:header;
+}
+
+.item2{
+    grid-area: main;
+}
+.item3{
+    grid-area: sidebar;
+}
+
+/*borders for the footer section*/
+.boxFooter{
+    border: solid 4px #F9F5E3;
+    border-radius: 3%;
+    background-color:rgb(250, 169, 137);
+    margin: 5px;
+    padding: 10px;
+    display: inline-flex;
+}
+
+/*makes the button change to orange when the mouse hovers over it */
+.buttonSubmit:hover{
+    background-color:orange
+}
+
+/*Changes the color of the headings*/
+#attendance, #agenda, #images, #form, #media{
+    color:rgb(241, 147, 110);
+
+}
+
+/*spacing for the buttons*/
+.buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+/*when the window size is 1000px background color is blue*/
+@media only screen and (max-width: 1000px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+/*chaning the colors and backgrounds depending on the relations*/
+div p{
+    background-color: rgb(255, 255, 146);
+    color: saddlebrown;
+}
+
+ol > li {
+    background-color: rgb(255, 255, 146);
+}
+
+p ~ ul{
+    background-color: rgb(255, 255, 146);
+}
+
+a + p{
+    font-size: 25px;
+}
+
+p.sub{
+    color:skyblue;
+}
+
+p[class="firstSub"]{
+    color:skyblue;
+}
+
+
+
+
