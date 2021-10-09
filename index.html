@@ -4,29 +4,36 @@
         <title> CSE110 Lab Week 2  </title>
         <meta name="description" content="Part 1. Intro to HTML - Meeting Minutes">
         <link rel ="icon" href="https://www.pinclipart.com/picdir/big/57-579889_note-taking-skills-clip-art-take-note-png.png">
+        <link rel="stylesheet" href="style_sheet.css">
     </head>
 
     <body>
-        <header>
-            <h1>First Project Meeting Notes</h1>
-            <h2>Introduction to Project and Planning</h2>
-            <h3>October 2, 2021</h3>
-            <h4>Navigation (Table of Content)</h4>
-            <nav>
-                <ol>
-                    <li><a href="#attendance">Attendance</a></li>
-                    <li><a href="#agenda">Agenda</a></li>
-                    <li><a href="#images">Images of things presented</a></li>
-                    <li><a href="#form">Form for Suggestions</a></li>
-                    <li><a href="#media">Media Gallery</a></li>
-                </ol>
-            </nav>
-            <hr>
-        </header>
+        <div class="boxHeader"> 
+            <header>
+                <div class="gridbox">
+                    <h1 class="item1">First Project Meeting Notes</h1>
+                    <h2 class="item2">Introduction to Project and Planning</h2>
+                    <h3 class="item3">October 2, 2021</h3>
+                </div>
+                <h4>Navigation (Table of Content)</h4>
+                <nav>
+                    <ol>
+                        <li><a href="#attendance">Attendance</a></li>
+                        <li><a href="#agenda">Agenda</a></li>
+                        <li><a href="#images">Images of things presented</a></li>
+                        <li><a href="#form">Form for Suggestions</a></li>
+                        <li><a href="#media">Media Gallery</a></li>
+                    </ol>
+                </nav>
+            </header>
+        </div>
+        <hr>
+        
         
         <main> 
             <section>
                 <a id="attendance"><h2>Attendance</h2></a>
+                <p class="firstSub">People in attendance:</p>
                 <ul> 
                     <li>Person 1</li>
                     <li>Person 2</li>
@@ -39,12 +46,14 @@
             </section>
             <section>
                 <a id="agenda"><h2>Agenda</h2></a>
+                <p class = "sub">Today's agenda is:</p>
                 <ul> 
                     <li>Discuss <span class="topics">unfinished topics</span> from last meeting</li>
                     <li>Introduce the <span class="topics">team</span> and <span class="topics">team leader</span></li>
                     <li>Introduce the <span class="topics">main goal of the project</span></li>
                     <li>Discuss the <span class="topics">subtasks</span></li>
                 </ul>
+
                 <hr>
             </section>
             <section>
@@ -65,90 +74,97 @@
                 <hr>
 
             </section>
-            <form>
-                <a id="form"><h2>Form for suggestions:</h2></a>
-                <fieldset>
-                    <p><b>Name:</b> </p>
-                    <input type="text" id="Name">
-    
-                    <p><b>What kind of transportation is available to you?:</b> </p>
-                    <div>
-                        <input type="checkbox" id="car" name="transportation" value="car">
-                        <label for="car">Car</label>
-                        <br>
-                        <input type="checkbox" id="bus" name="transportation" value="bus">
-                        <label for="bus">Bus</label>
-                        <br>
-                        <input type="checkbox" id="bike" name="transportation" value="bike">
-                        <label for="bike">Bike</label>
-                        <br>
-                        <input type="checkbox" id="walking" name="transportation" value="walking">
-                        <label for="walking">Walking</label>
-                    </div>
-    
-                    <p><b>Reason for submitting a form:</b> </p>
-                    <div>
-                        <input type="radio" id="correction" name="reason" value="correction">
-                        <label for="correction">Suggestion correction for meeting notes</label>
-                        <br>
-                        <input type="radio" id="addition" name="reason" value="addition">
-                        <label for="addition">Suggestion something important that needs to be added</label>
-                        <br>
-                        <input type="radio" id="setting" name="reason" value="setting">
-                        <label for="setting">Suggestion for date and/or location</label>
-                        <br>
-                        <input type="radio" id="other" name="reason" value="other">
-                        <label for="other">Other</label>
-                    </div>
-    
-                    <div>
-                        <p><b>Date for next meeting:</b> </p>
-                        <input type="date" id="date">
-    
-                        <p><b>Location for next meeting</b> </p>
-                        <select name="location" id="location">
-                            <option value="location1">Indoors: On Campus</option>
-                            <option value="location2">Outdoors: On Campus</option>
-                            <option value="location3">Indoors: Off Campus</option>
-                            <option value="location4">Outdoors: Off Campus</option>
-                        </select>
-    
-                    </div>
-                    
-                    <div>
-                    <p>Type your suggestions here:</p>
-                    <textarea id="suggestions" name ="suggestions" rows="6" cols="70"></textarea>
-                    </div>
-                    
-                    
-                    <div>
-                        <p>How did you feel about this meeting?</p>
-                        <input list="feeling_list" id="feeling" name="feeling" />
-                        <datalist id="feeling_list">
-                            <option value="Terrible">
-                            <option value="Okay">
-                            <option value="Great">
-                        </datalist>
-                    </div>
-                    <br>
-                    <div>
-                        <input type="button" value="Submit Form">
-                    </div>
-                  
-    
-                </fieldset>
-            </form>
-        </main>
+            <div class="form">
+                <form>
+                    <a id="form"><h2>Form for suggestions:</h2></a>
+                    <fieldset>
+                        <div class="box">
+                            <p><b>Name:</b> </p>
+                            <input type="text" id="Name">
+                        </div>
+                        <div class="box">
+                        <p><b>What kind of transportation is available to you?:</b> </p>
+                        
+                            <input type="checkbox" id="car" name="transportation" value="car">
+                            <label for="car">Car</label>
+                            <br>
+                            <input type="checkbox" id="bus" name="transportation" value="bus">
+                            <label for="bus">Bus</label>
+                            <br>
+                            <input type="checkbox" id="bike" name="transportation" value="bike">
+                            <label for="bike">Bike</label>
+                            <br>
+                            <input type="checkbox" id="walking" name="transportation" value="walking">
+                            <label for="walking">Walking</label>
+                        </div>
+                        <div class="box">
+                        <p><b>Reason for submitting a form:</b> </p>
+                            <input type="radio" id="correction" name="reason" value="correction">
+                            <label for="correction">Suggestion correction for meeting notes</label>
+                            <br>
+                            <input type="radio" id="addition" name="reason" value="addition">
+                            <label for="addition">Suggestion something important that needs to be added</label>
+                            <br>
+                            <input type="radio" id="setting" name="reason" value="setting">
+                            <label for="setting">Suggestion for date and/or location</label>
+                            <br>
+                            <input type="radio" id="other" name="reason" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                        <div class="box">
+                            <p><b>Date for next meeting:</b> </p>
+                            <input type="date" id="date">
         
-        <footer>
-            <p><b>Note Taker:</b> Fione Huynh</p>
-            <details>
-                <summary>Summary for the Meeting</summary>
-                <p> The meeting on <strong>October 3, 2021</strong> covered the introduction of the project 
-                    and team. We also went over some the substasks for the project. Next week 
-                    we will discuss <em>how to split up the work and assign deadlines</em> for each subtasks. 
-                    Overall the meeting went well and was very <i>productive</i>.</p>
-            </details>
-        </footer>
+                            <p><b>Location for next meeting</b> </p>
+                            <select name="location" id="location">
+                                <option value="location1">Indoors: On Campus</option>
+                                <option value="location2">Outdoors: On Campus</option>
+                                <option value="location3">Indoors: Off Campus</option>
+                                <option value="location4">Outdoors: Off Campus</option>
+                            </select>
+                        </div>
+                        
+                        
+                        <div class="box">
+                        <p>Type your suggestions here:</p>
+                        <textarea id="suggestions" name ="suggestions" rows="6" cols="70"></textarea>
+                        </div>
+                    
+                        <div class="box">
+                            <p>How did you feel about this meeting?</p>
+                            <input list="feeling_list" id="feeling" name="feeling" />
+                            <datalist id="feeling_list">
+                                <option value="Terrible">
+                                <option value="Okay">
+                                <option value="Great">
+                            </datalist>
+                        </div>
+                        <br>
+                        <div class="buttons">
+                            <input type="button" value="Submit Form" class="buttonSubmit">
+                            <input type="button" value="Cancel Form" class="buttonCancel">
+                            <input type="button" value="Button" class="button">
+
+                        </div>
+
+                    
+        
+                    </fieldset>
+                </form>
+        </div>
+        </main>
+        <div class="boxFooter">
+            <footer>
+                <p><b>Note Taker:</b> Fione Huynh</p>
+                <details>
+                    <summary>Summary for the Meeting</summary>
+                    <p> The meeting on <strong>October 3, 2021</strong> covered the introduction of the project 
+                        and team. We also went over some the substasks for the project. Next week 
+                        we will discuss <em>how to split up the work and assign deadlines</em> for each subtasks. 
+                        Overall the meeting went well and was very <i>productive</i>.</p>
+                </details>
+            </footer>
+        </div>
+        
     </body>
 </html>
